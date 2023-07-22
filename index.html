@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Biker Zone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header
+      class="bg-local lg:w-[200%] lg:px-40 w-full xl:w-full lg:h-[55rem] h-[45rem] px-10 xl:h-[950px] xl:px-40 pt-14 lg:bg-cover"
+      style="
+        background-image: url('./images/slider/banner.png'),
+          linear-gradient(
+            90deg,
+            #181818 0%,
+            rgba(24, 24, 24, 0.82) 24.48%,
+            rgba(24, 24, 24, 0) 100%
+          );
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+      "
+    >
+      <nav class="flex justify-between items-center">
+        <h1 class="text-4xl font-popins font-bold uppercase text-white">
+          Go ride
+        </h1>
+        <ul class="text-white flex gap-12 items-center">
+          <li>home</li>
+          <li>contact</li>
+          <li>list item</li>
+          <li><button class="bg-[#E76F51] text-xl w-40 h-16">Login</button></li>
+        </ul>
+      </nav>
+      <section class="mt-36 text-left gap-8 flex flex-col">
+        <h1 class="text-7xl text-white font-popins font-bold leading-[5rem]">
+          Keep Your Ride Safe <br />
+          At Every Time
+        </h1>
+        <p class="text-white">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat <br />
+          duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+          amet.
+        </p>
+        <button class="bg-[#E76F51] text-xl text-white w-40 h-16">
+          Purchase
+        </button>
+      </section>
+    </header>
+
+    <main>
+      <!-- slider carousal for bike collection  -->
+
+      <section
+        class="mx-20 mt-10 xl:m-0 xl:m-auto xl:mt-12 rounded-lg bg-[#ffbfaf] xl:h-3/5 xl:w-3/5 flex justify-center"
+      >
+        <div
+          class="carousel w-full flex items-center justify-between m-auto xl:h-2/5"
+        >
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="/images/others/slider (1).png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="/images/others/slider (2).png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="/images/others/slider (3).png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="/images/slider/bike4.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="px-6 lg:px-40">
+        <h1 class="text-white font-bold font-popins text-4xl text-center mt-48">
+          Fetured Bikes In This Year
+        </h1>
+        <div class="flex justify-between items-center">
+          <img class="w-72" src="./images/slider/bike2.png" alt="" />
+          <img class="w-72" src="./images/slider/bike3.png" alt="" />
+          <img class="w-72" src="./images/slider/bike4.png" alt="" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
